@@ -1,8 +1,9 @@
 body {
-  height: 200vh;
+  height: 100vh;
   background-image: url(../images/cristina-gottardi-wVTGdIGdojc-unsplash.jpg);
   background-size: cover;
 }
-.logo {
-  background: url(../images/logo.png);
+div {
+  background-image: url(../images/logo.png);
+  height: 20px;
 }
