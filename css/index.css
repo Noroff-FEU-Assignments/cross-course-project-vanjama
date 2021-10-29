@@ -1,3 +1,5 @@
+/*index page*/
+
 header {
   padding: 50px;
   border-bottom: #352a6e 0px solid;
@@ -9,6 +11,7 @@ header li {
   padding: 15;
   overflow: hidden;
   float: left;
+  max-width: 100%;
 }
 header ul {
   float: left, top;
@@ -88,5 +91,41 @@ footer {
   text-align: center;
   width: 100%;
   position: fixed;
-  bottom: 0;
+  bottom: 0%;
 }
+
+@media (max-width: 320px) {
+  li {
+    padding-left: 20px;
+    padding-bottom: 0%;
+    padding-top: 170%;
+  }
+
+i {
+  padding-right: 0;
+
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 50%;
+  
+}
+  
+body{
+
+  background-image: url("images/cristina-gottardi-wVTGdIGdojc-unsplash") no-repeat;
+
+  }
+    
+    
+  
+footer {
+  display: none !important;
+}
+
+/*About*/
+
+/*contact*/
+
+/*jackets*/
