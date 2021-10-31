@@ -87,6 +87,13 @@ i {
   display: grid;
 }
 
+.footer {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
 @media (max-width: 320px) {
   li {
     padding-left: 0px;
@@ -97,12 +104,7 @@ i {
   padding: 6px;
   text-align: center;
 }
-footer {
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0%;
-}
+
 body {
   background-image: url("images/cristina-gottardi-wVTGdIGdojc-unsplash")
     no-repeat;
