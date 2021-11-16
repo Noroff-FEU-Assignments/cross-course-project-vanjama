@@ -1,0 +1,133 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/cristina-gottardi-wVTGdIGdojc-unsplash.jpg);
+  background-position-x: center;
+  background-repeat: repeat;
+  background-size: cover;
+  padding-bottom: 58px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding-top: 1%;
+}
+
+header {
+  border-bottom: #352a6e 3px solid;
+  display: flex;
+  float: right;
+  font-size: inherit;
+  position: center;
+  background-color: aliceblue;
+  padding-top: 30px;
+  min-height: 70px;
+  padding-top: 45px;
+}
+
+header li {
+  margin: 10px;
+  padding: 15;
+  overflow: hidden;
+  float: left;
+  max-width: 100%;
+}
+header ul {
+  display: relative;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+  list-style-type: none;
+  word-spacing: 100%;
+}
+
+.cta {
+  background-color: #352a6e;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  width: 150px;
+  padding-right: 0%;
+}
+
+i {
+  color: #352a6e;
+  float: right;
+  position: relative;
+  margin-left: 5;
+  padding: 6px;
+  display: grid;
+  padding-top: 0%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: center;
+  padding-top: 30px;
+}
+
+/*global*/
+.container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* Resize images */
+.container img {
+  width: 20%;
+  display: center;
+  padding-top: 0px;
+  border-top: 0px;
+  padding-bottom: 0px;
+}
+#boxes {
+  margin-top: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+#boxes .box {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  display: flex;
+  background-color: aliceblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 2px;
+}
+
+.cta {
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 500px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flexbox;
+}
+
+button {
+  display: flexbox;
+  background-color: #352a6e;
+  color: aliceblue;
+  border-left: 50px;
+}
