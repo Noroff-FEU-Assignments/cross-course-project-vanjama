@@ -112,6 +112,7 @@ i {
   padding-left: 20px;
   padding-right: 20px;
   border-left: 2px;
+  margin-left: 2px;
 }
 
 .cta {
@@ -124,10 +125,40 @@ i {
   text-align: center;
   display: flexbox;
 }
-
 button {
-  display: flexbox;
   background-color: #352a6e;
-  color: aliceblue;
-  border-left: 50px;
+  color: floralwhite;
+  margin-left: 900px;
+  margin-top: 20px;
+  width: 50px;
+  height: 30px;
+  display: flexbox;
+}
+
+@media only screen and (max-device-width: 480px) {
+  div#wrapper {
+    width: 400px;
+  }
+
+  #header {
+    height: 93px;
+    position: relative;
+    display: flex;
+  }
+  .container {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  #content {
+    float: none;
+    width: 100%;
+  }
+  #i {
+    size: 2px;
+    display: flex;
+  }
+  #navigation {
+    float: none;
+    width: auto;
+  }
 }

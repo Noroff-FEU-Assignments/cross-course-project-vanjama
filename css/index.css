@@ -106,8 +106,6 @@ main {
   bottom: 0%;
 }
 
-/*about page*/
-
 .box2 {
   background-color: aliceblue;
   height: 200px;
@@ -140,4 +138,32 @@ button {
   margin-right: 50px;
   border-radius: 12px;
   width: 150px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  div#wrapper {
+    width: 400px;
+  }
+
+  #header {
+    height: 93px;
+    position: relative;
+    display: flex;
+  }
+  .container {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  #content {
+    float: none;
+    width: 100%;
+  }
+  #i {
+    size: 2px;
+    display: flex;
+  }
+  #navigation {
+    float: none;
+    width: auto;
+  }
 }

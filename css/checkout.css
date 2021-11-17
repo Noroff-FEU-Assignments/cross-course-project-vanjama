@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background-image: url(../images/cristina-gottardi-wVTGdIGdojc-unsplash.jpg);
+  background-image: repeat none;
   background-position-x: center;
   background-repeat: repeat;
   background-size: cover;
@@ -24,7 +25,7 @@ header {
   background-color: aliceblue;
   padding-top: 30px;
   min-height: 70px;
-  padding-top: 15px;
+  padding-top: 45px;
 }
 
 header li {
@@ -48,18 +49,19 @@ header ul {
 
 .cta {
   background-color: #352a6e;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 4px 2px;
+  color: aliceblue;
+  width: 100px;
+  height: 20px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 12px;
-  width: 150px;
-  padding-right: 0%;
+  text-align: center;
+  display: grid;
+  text-decoration: none;
+  border: none;
+  margin-left: 300px;
+  border-top: 100px;
+  position: right;
+  margin-top: 20px;
 }
 
 i {
@@ -69,14 +71,14 @@ i {
   margin-left: 5;
   padding: 6px;
   display: grid;
-  padding-top: 0px;
+  padding-top: 0%;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100px;
   display: center;
   padding-top: 30px;
 }
@@ -88,7 +90,6 @@ i {
   overflow: hidden;
   padding-top: 0px;
   padding-bottom: 0px;
-  color: #352a6e;
 }
 /* Resize images */
 .container img {
@@ -98,17 +99,23 @@ i {
   border-top: 0px;
   padding-bottom: 0px;
 }
-
-form {
-  background-color: aliceblue;
-  width: 400px;
-  height: 200px;
-  border: solid 3px #352a6e;
-  padding-top: 0px;
+#boxes {
+  margin-top: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
 }
-button {
-  background-color: #352a6e;
-  color: aliceblue;
+#boxes .box {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  display: flex;
+  background-color: aliceblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 2px;
+  margin-left: 2px;
+  margin-left: 200px;
 }
 
 @media only screen and (max-device-width: 480px) {
