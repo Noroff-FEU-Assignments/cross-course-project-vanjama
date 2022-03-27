@@ -1,67 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;"> 
+<html> 
 
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Rainydays contact">
-        <meta property="og:description" content="Online store rainjackets contact us">
-        <meta name="keywords" content="affordable rainyjacket for women and men contact us">
+        <meta name="description" content="Rainydays Rainjackets">
+        <meta property="og:description" content="Online store rainjackets">
+        <meta name="keywords" content="affordable rainyjacket for women and men">
         <meta name="author" content="Vanja Marouf">
 
-        <Title>Home Page Rainydays</Title>  
+        <Title>Account</Title>  
 
-<link rel="stylesheet" href=css/contact.css>  
+<link rel="stylesheet" href=css/style.css>  
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <!-- Hotjar Tracking Code for https://focused-swanson-e7e269.netlify.app/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2854663,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
     </head>
-    
-
 <body>
-
-    <header>
-        <div class="container">
-            <img src="images/logo.png" alt="logo" class="center">
-           </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <h1>
-            <i class="fa fa-shopping-cart"></i>
-            <i href="search.html" class="fa fa-search"></i>
-        </h1>
     
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="images/logo (1).png" width="125px"/>
+</div>
+<nav>
+    <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Account</a></li>
+    </ul>
+</nav>
+<h6><a href="checkout.html" class="fa fa-shopping-cart"></a></h6>
+<img src="images/menu.png" class="menu-icon"
+ onclick="menutoggle()">
 
-    </header>
-    <main>
-    <section id="feedabck">
-     <div class="container">
-        <h1>Contact us</h1>
-        <form>
-          <p> Give us feedback</p>
+</div>
+</div>
+
+<div class="account-page">
+<div class="container">
+    <div class="row">
+<div class="col-2">
+<img src="images/glen-carrie-_oNISBwMTwo-unsplash.jpg" alt="">
+</div>
+<div class="col-2">
+    <div class="form-container">
+        <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="register()">Register</span>
+            <hr id="Indicator">
+        </div>
+        <form id="LoginForm">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <button type="submit" class="btn">Login</button>
+            <a href="">Forgot password</a>
+            <div class="error"></div>
+                    </form>
+        <form id="RegForm">
+<input type="text" placeholder="username">
+<input type="email" placeholder="email">
+<input type="password" placeholder="password">
+<button type="submit" class="btn">Register</button>
+<div class="error"></div>
         </form>
-        <button type="button" class="button_1" > Send</button>
-         </div>
-          </section>
-    </main>
+    </div>
+</div>
 
-<footer>Copyright &copy;2021</footer>
+ </div>
+</div>
+</div>   
 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png" alt="">
+                    <img src="images/play-store.png" alt="">
+                </div>
+            </div>
+            <div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Vanja Marouf</p>
+    </div>
+</div>
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+        MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight ="0px";
+            }
+        }
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator")
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform ="translateX(0px)";
+            Indicator.style.transform ="translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform ="translateX(300px)";
+            Indicator.style.transform ="translateX(0px)";
+        }
+        
+    var form = document.getElementById('form');
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
+    var email = document.getElementById('email');
     
-    </body>
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+    
+        validateInputs();
+    });
+    
+    var setError = (element, message) => {
+        var inputControl = element.parentElement;
+        var errorDisplay = inputControl.querySelector('.error');
+    
+        errorDisplay.innerText = message;
+        inputControl.classList.add('error');
+        inputControl.classList.remove('success')
+    }
+    
+    var setSuccess = element => {
+        var inputControl = element.parentElement;
+        var errorDisplay = inputControl.querySelector('.error');
+    
+        errorDisplay.innerText = '';
+        inputControl.classList.add('success');
+        inputControl.classList.remove('error');
+    };
+    
+    var validateInputs = () => {
+        var usernameValue = username.value.trim();
+        var emailValue = email.value.trim();
+        var passwordValue = password.value.trim();
+      
+    
+        if(usernameValue === '') {
+            setError(username, 'Username is required');
+        } else {
+            setSuccess(username);
+        }
+    
+        if(emailValue === '') {
+            setError(email, 'Email is required');
+        } else if (!isValidEmail(emailValue)) {
+            setError(email, 'Provide a valid email address');
+        } else {
+            setSuccess(email);
+        }
+    
+        if(passwordValue === '') {
+            setError(password, 'Password is required');
+        } else if (passwordValue.length < 10 ) {
+            setError(password, 'Password must be at least 8 character.')
+        } else {
+            setSuccess(password);
+        }
+    
+    };
+        
+    </script>
+    
+</body>
 </html>

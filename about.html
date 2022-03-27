@@ -1,73 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;"> 
+<html> 
 
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Rainydays About">
-        <meta property="og:description" content="Online store rainjackets about">
-        <meta name="keywords" content="affordable rainyjacket for women and men about store history nature sporty">
+        <meta name="description" content="Rainydays Rainjackets">
+        <meta property="og:description" content="Online store rainjackets">
+        <meta name="keywords" content="affordable rainyjacket for women and men">
         <meta name="author" content="Vanja Marouf">
 
-        <Title>Home Page Rainydays</Title>  
+        <Title>About Us</Title>  
 
-<link rel="stylesheet" href=css/about.css>  
+<link rel="stylesheet" href=css/style.css>  
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <!-- Hotjar Tracking Code for https://focused-swanson-e7e269.netlify.app/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2854663,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
     </head>
-    
-
 <body>
 
-    <header>
-        <div class="container">
-            <img src="images/logo.png" alt="logo" class="center">
-           </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <h1>
-            <i class="fa fa-shopping-cart"></i>
-            <i href="search.html" class="fa fa-search"></i>
-        </h1>
-
-    </header>
-
-    <main>
-
-<section id="About">
     <div class="container">
-<h1>About Us</h1>
-<form>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis qui consequuntur placeat esse veritatis quas, maxime cupiditate quasi reprehenderit nostrum. Nisi mollitia quam fugiat distinctio voluptate, magnam dolores quo maxime!
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequatur mollitia aliquid harum a accusantium et commodi nemo, fuga qui quibusdam voluptatum totam veritatis aspernatur incidunt odit eligendi culpa sint.
-  </p>
-</form>
- </div>
-  </section>
+<div class="navbar">
+<div class="logo">
+<img src="images/logo (1).png" width="125px"/>
+</div>
+<nav>
+    <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Account</a></li>
+    </ul>
+</nav>
+<h6><a href="checkout.html" class="fa fa-shopping-cart"></a></h6>
+<img src="images/menu.png" class="menu-icon"
+ onclick="menutoggle()">
+
+</div>
+</div>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>ABOUT US</h1>
         
-    </main>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                <br> nam esse, facere placeat, necessitatibus quibusdam velit alias voluptatem sapiente officiis doloribus impedit quasi rerum, natus fuga. 
+                <br>Qui rerum cum earum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nesciunt dolorem consequatur, animi possimus sed, dignissimos alias voluptates perferendis accusantium officiis iusto. Alias sapiente, dolorem suscipit magni consectetur pariatur nostrum.</p>
+            
+        </div>
+        <div class="about-col">
+            <img src="images/thom-holmes-fIZMcJsw-ms-unsplash.jpg">
 
-<footer>Copyright &copy;2021</footer>
+        </div>
 
+    </div>
+</section>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png" alt="">
+                    <img src="images/play-store.png" alt="">
+                </div>
+            </div>
+            <div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Vanja Marouf</p>
+    </div>
+</div>
+    <script>var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+        MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight ="0px";
+            }
+        }
+        </script>
     
-    </body>
-
-
-
+</body>
 </html>

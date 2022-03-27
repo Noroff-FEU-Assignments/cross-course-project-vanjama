@@ -1,63 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;"> 
+<html> 
 
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Rainydays Rainjackets">
-        <meta property="og:description" content="Rainjackets">
-        <meta name="keywords" content="affordable rainyjacket for women and men buy new inn sporty nature">
+        <meta property="og:description" content="Online store rainjackets">
+        <meta name="keywords" content="affordable rainyjacket for women and men">
         <meta name="author" content="Vanja Marouf">
 
-        <Title>Home Page Rainydays</Title>  
+        <Title>Jackets</Title>  
 
-<link rel="stylesheet" href=css/index.css>  
+<link rel="stylesheet" href=css/style.css>  
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <!-- Hotjar Tracking Code for https://focused-swanson-e7e269.netlify.app/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2854663,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
     </head>
-    
-
 <body>
 
-    <header>
-        <div class="container">
-            <img src="images/logo.png" alt="logo" class="center">
-           </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="images/logo (1).png" width="125px"/>
+</div>
+<nav>
+    <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Account</a></li>
+    </ul>
+</nav>
+<h6><a href="checkout.html" class="fa fa-shopping-cart"></a></h6>
+<img src="images/menu.png" class="menu-icon"
+ onclick="menutoggle()">
 
-        <h1>
-            <i class="fa fa-shopping-cart"></i>
-            <i class="fa fa-search"href="search.html"></i>
-        </h1>
-    
+</div>
+</div>
 
-    </header>
-    <main>
-        <a class="cta" href="product.html">MEN</a>  
-        <a class="cta" href="product.html">WOMEN</a>  
-        <a class="cta" href="product.html">SALE</a>  
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/thom-holmes-FeFgos-myPg-unsplash.jpg" width="100%" alt="">
+        </div>
+        <div class="col-2">
+            <p>Rainydays</p>
+            <h1>Noroff Jacket</h1>
+            <h4>699,-NOK</h4>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add to Cart</button>
+            <h3>Product Details</h3>
+            <br>
+            <p>Superduper jacket, best in the world. Order now before it is to late.
+               <br>This jacket is super nice with a par of nice shoes.
+            </p>
+    </div>
+</div>
+</div>
+<div class="small-container">
+    <div class="row">
+        <div class="col-c">
+            <img src="images/thom-holmes-naNYT9TgJ4c-unsplash.jpg" alt="">
+            <h4>Yellow stella jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>999,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/thom-holmes-mWBMgWAD63c-unsplash.jpg" alt="">
+            <h4> Oslo rainy jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>799,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/thom-holmes-fIZMcJsw-ms-unsplash.jpg" alt="">
+            <h4>London rainydays</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1599,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/thom-holmes-FeFgos-myPg-unsplash.jpg" alt="">
+            <h4>Noroff ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>899,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and ios mobile</p>
+                            <div class="app-logo">
+                                <img src="images/app-store.png" alt="">
+                                <img src="images/play-store.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                    <hr>
+                    <p class="copyright">Copyright 2022 - Vanja Marouf</p>
+                </div>
+            </div>
+
+
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
         
-    </main>
-
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+        MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight ="0px";
+            }
+        }
+    var noti = document.querySelector('h6');
+	var select = document.querySelector('select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero')
+       
+        })
+    }
+            </script>
     
-    </body>
-
-
-
+</body>
 </html>

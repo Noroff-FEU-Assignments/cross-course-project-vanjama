@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html> 
+
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rainydays Rainjackets">
+        <meta property="og:description" content="Online store rainjackets">
+        <meta name="keywords" content="affordable rainyjacket for women and men">
+        <meta name="author" content="Vanja Marouf">
+
+        <Title>Search</Title>  
+
+<link rel="stylesheet" href=css/style.css>  
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+<body>
+
+    <div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="images/logo (1).png" width="125px"/>
+</div>
+<nav>
+    <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Account</a></li>
+    </ul>
+</nav>
+<h6><i class="fa fa-shopping-cart"></i></h6>
+<img src="images/menu.png" class="menu-icon"
+ onclick="menutoggle()">
+
+</div>
+</div>
+
+	<section>
+		<div class="item">
+			<img src="image/043.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h7>$345.89</h7>
+			<span></span>
+			<button>Add-cart</button>
+			
+		</div>
+		<div class="item">
+			<img src="image/044.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h7>$345.89</h7>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img src="image/045.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h7>$345.89</h7>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<img src="image/046.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+			<h7>$345.89</h7>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+	</section>
+	<div class="select">
+		
+	</div>
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png" alt="">
+                    <img src="images/play-store.png" alt="">
+                </div>
+            </div>
+            <div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Vanja Marouf</p>
+    </div>
+</div>
+    <script>var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+        MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight ="0px";
+            }
+        }
+    var noti = document.querySelector('h6');
+	var select = document.querySelector('.select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero')
+
+		})
+	}
+        </script>
+    
+</body>
+</html>

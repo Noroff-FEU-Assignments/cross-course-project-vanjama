@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;"> 
+<html> 
 
     <head> 
         <meta charset="utf-8">
@@ -11,52 +11,236 @@
 
         <Title>Home Page Rainydays</Title>  
 
-<link rel="stylesheet" href=css/index.css>  
+<link rel="stylesheet" href=css/style.css>  
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <!-- Hotjar Tracking Code for https://focused-swanson-e7e269.netlify.app/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2854663,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
     </head>
-    
-
 <body>
 
-    <header>
+    <div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="images/logo (1).png" width="125px"/>
+</div>
+<nav>
+    <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Account</a></li>
+    </ul>
+</nav>
+<h6><a href="checkout.html" class="fa fa-shopping-cart"></a></h6>
+<img src="images/menu.png" class="menu-icon"
+ onclick="menutoggle()">
+
+</div>
+<div class="row">
+<div class="col-a">
+    <h1>Always stylish, <br> even on rainy days!</h1>
+    <p>Comfort, Quality & Fashionabel</p>
+    <a href="product.html" class="btn"> Shop Now</a>
+    </div>
+    <div class="col-a">
+        <img src="images/thomas-kelley-kZLaSWR-7J4-unsplash.jpg">
+</div>
+</div>
+</div>
+</div>
+<div class="categories">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-b">
+            <img src="images/pexels-yaroslav-shuraev-7165173.jpg" alt="">
+        </div>
+        <div class="col-b">
+            <img src="images/pexels-yaroslav-shuraev-7165212.jpg" alt="">
+        </div>
+        <div class="col-b">
+            <img src="images/pexels-yaroslav-shuraev-7165250.jpg" alt="">
+</div>
+</div>
+</div>
+</div>
+<div class="small-container">
+    <h2 class="title">Most Wanted Items</h2>
+    <div class="row">
+        <div class="col-c">
+            <img src="images/thom-holmes-mWBMgWAD63c-unsplash.jpg" alt="">
+            <h4> Oslo rainy jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>799,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/thom-holmes-fIZMcJsw-ms-unsplash.jpg" alt="">
+            <h4>London rainydays</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1599,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/thom-holmes-FeFgos-myPg-unsplash.jpg" alt="">
+            <h4>Noroff ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>899,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+    </div>
+    <h2 class="title">New Products</h2>
+    <div class="row">
+        <div class="col-c">
+            <img src="images/alvin-balemesa-xQ4GvoEp6hw-unsplash.jpg" alt="">
+            <h4>Java jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>999,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/alvin-balemesa-65Rn4UvXyoM-unsplash.jpg" alt="">
+            <h4> HTML rainy jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>799,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/alvin-balemesa-xQ4GvoEp6hw-unsplash.jpg" alt="">
+            <h4>React jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1599,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/alvin-balemesa-65Rn4UvXyoM-unsplash.jpg" alt="">
+            <h4>CSS ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>899,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/roman-shilin-KuWLUVTceSw-unsplash.jpg" alt="">
+            <h4>Github ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>2099,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/roman-shilin-12ybyCCwXYU-unsplash.jpg" alt="">
+            <h4>Vue ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>399,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/roman-shilin-IDmp9MxIou4-unsplash.jpg" alt="">
+            <h4>UIO ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>199,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+        <div class="col-c">
+            <img src="images/roman-shilin-12ybyCCwXYU-unsplash.jpg" alt="">
+            <h4>Spring ranyjacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>299,-</p>
+            <a href="" class="btn">Buy Now</a>
+        </div>
+</div>
+    <div class="footer">
         <div class="container">
-            <img src="images/logo.png" alt="logo" class="center">
-           </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile</p>
+                    <div class="app-logo">
+                        <img src="images/app-store.png" alt="">
+                        <img src="images/play-store.png" alt="">
+                    </div>
+                </div>
+                <div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Vanja Marouf</p>
+        </div>
+    </div>
+        <script>var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+            MenuItems.style.maxHeight = "200px"
+                }
+                else {
+                    MenuItems.style.maxHeight ="0px";
+                }
+            }
+            </script>
 
-        <h1>
-            <i class="fa fa-shopping-cart"></i>
-            <i class="fa fa-search" href="search.html" ></i>
-        </h1>
-    
-
-    </header>
-    <main>
-            <a class="cta" href="jackets.html">SHOP NOW</a> 
-        
-    </main>
-
-<footer>Copyright &copy;2021</footer>
-
-    
-    </body>
-
-
+</body>
 </html>
