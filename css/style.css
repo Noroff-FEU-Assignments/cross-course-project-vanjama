@@ -516,6 +516,7 @@ h6.zero:before {
     top: -70px;
   }
 }
+}
 
 @media only screen and (max-width: 800px) {
   nav ul {
@@ -558,5 +559,4 @@ h6.zero:before {
   .check-out {
     padding-right: 80px;
   }
-}
 }
