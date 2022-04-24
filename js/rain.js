@@ -16,13 +16,13 @@ async function getProducts(){
 getProducts();
 
 function creatHTML(products){
-    products.forEach(function(product){
+    products.forEach(function(products){
         productContainer.innerHTML +=
-        `<a href="jackets.html?"class="product">
-        <h4>${product.name}</h4>
-        <img src="${product.images[0].src}" alt="${product.name}"></div>
-        <p>${product.price_html}</p>
-        <div class="id"<div><button>Buy Now</button></div></a>
+        `<a href="jackets.html?id=${products.id}"class="product">
+        <h4>${products.name}</h4>
+        <img src="${products.images[0].src}" alt="${products.name}"></div>
+        <p>${products.price_html}</p>
+        <div class="ig"<div><button>Buy Now</button></div></a>
         `;
         
         

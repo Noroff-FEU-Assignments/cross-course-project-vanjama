@@ -40,7 +40,7 @@ p {
   padding-right: 25px;
 }
 .row {
-  display: flex;
+  
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -472,11 +472,16 @@ h6.zero:before {
   padding-top: 20px;
 }
 .small-container{
-  padding-left: 25px;
+  padding-left: 100px;
   padding-right: 25px;
 
 }
 
+.row-s {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
 
 @keyframes first {

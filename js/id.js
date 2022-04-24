@@ -8,7 +8,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 
-const url = "https://vanjamarouf.site/wp-json/wc/store/v1/products/"  + "?key=ck_03fad1e44937acbe8c389444c228ad9dcf1bc0d9";
+const url = "https://vanjamarouf.site/wp-json/wc/store/v1/products/"  + id + "?key=ck_03fad1e44937acbe8c389444c228ad9dcf1bc0d9";
 
 console.log(url);
 
@@ -34,11 +34,9 @@ getProducts();
 
 
         function createHtml(products) {
-            for (let i = 0; i < products.length; i++) {
-              detailContainer.innerHTML = `<div class="product">
-              <h1>${products[i].name}</h1>
-              <img src="${products[i].images[i].src}">
-            <div class="details-description">${products[i].description}</div>
-            <div class="details-price">${products[i].price_html}</div></div>`;
-            }
+          detailContainer.innerHTML = `
+          <h4>${products.name}</h4>
+          <img src="${products.images[0].src}" alt="${products.name}"></div>
+          <p>${products.description}</p>
+          <p>${products.price_html}</p>`
           }
