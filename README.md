@@ -4,7 +4,7 @@
 
 Project for my School. 
 
-Description
+# Description
 The project was to make a webpage for a fictitious online store called "RainyDays".
 
 - Online store selling rain jackets, for men and women. 
@@ -17,7 +17,7 @@ The project was to make a webpage for a fictitious online store called "RainyDay
 
 -Javascript
 
-#Getting Started
+# Getting Started
 Installing: Clone the repo and then to install the dependencies.
 
 Clone the repo: git clone https://github.com/vanjama/semester-project-1.git
@@ -28,12 +28,12 @@ Running: To run the app, run the following commands:
 
 npm run start
 
-#Contributing
+# Contributing
 - Fork the repo on GitHub
 - Clone the project to your own machine
 - Commit changes to your own branch
 - Push your work back up to your fork
 - Submit a Pull request so that I can review your changes
 
-#Contact
+# Contact
 maroufvanja@gmail.com
