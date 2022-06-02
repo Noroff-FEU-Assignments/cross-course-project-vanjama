@@ -20,7 +20,7 @@ The project was to make a webpage for a fictitious online store called "RainyDay
 # Getting Started
 Installing: Clone the repo and then to install the dependencies.
 
-Clone the repo: git clone https://github.com/vanjama/semester-project-1.git
+Clone the repo: git clone https://github.com/Noroff-FEU-Assignments/cross-course-project-vanjama.git
 
 Install the dependencies: npm install
 
