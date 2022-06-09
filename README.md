@@ -18,15 +18,10 @@ The project was to make a webpage for a fictitious online store called "RainyDay
 -Javascript
 
 # Getting Started
-Installing: Clone the repo and then to install the dependencies.
+
 
 Clone the repo: git clone https://github.com/Noroff-FEU-Assignments/cross-course-project-vanjama.git
 
-Install the dependencies: npm install
-
-Running: To run the app, run the following commands:
-
-npm run start
 
 # Contributing
 - Fork the repo on GitHub
